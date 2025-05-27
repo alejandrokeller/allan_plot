@@ -1,6 +1,6 @@
 # Allan Deviation Calculator
 
-This Python script calculates the Allan deviation for one or more time series stored in CSV files. It supports both normal and overlapping Allan deviation, generates plots, and optionally includes uncertainty estimates and sample counts in the output.
+This Python script calculates the Allan deviation for one or more time series stored in CSV files. It supports both normal and overlapping Allan deviation, generates plots, including uncertainty estimates and sample counts in the output.
 
 ## Features
 
@@ -54,6 +54,34 @@ python allan_deviation_calculator.py \
     --taus decade \
     --delimiter ";" \
     --output_dir output
+```
+
+## Command-Line Arguments
+
+```
+usage: allan_deviation_calculator.py [-h] [--input_csv INPUT_CSV] [--batch_folder BATCH_FOLDER] [-r RATE]
+                                     [-t {normal,overlapping}] -c COLUMNS [COLUMNS ...] [--taus {all,octave,decade}]
+                                     [--delimiter DELIMITER] [--output_dir OUTPUT_DIR]
+
+Calculate Allan deviation for one or many CSV files.
+
+options:
+  -h, --help            show this help message and exit
+  --input_csv INPUT_CSV
+                        Path to a single CSV file
+  --batch_folder BATCH_FOLDER
+                        Directory containing multiple CSV files
+  -r RATE, --rate RATE  Sampling interval (seconds)
+  -t {normal,overlapping}, --type {normal,overlapping}
+                        Type of Allan deviation to compute
+  -c COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]
+                        List of column names for which to calculate Allan deviation
+  --taus {all,octave,decade}
+                        Tau values to use for Allan deviation calculation
+  --delimiter DELIMITER
+                        CSV delimiter (default: ';')
+  --output_dir OUTPUT_DIR
+                        Directory to save output CSVs and plots
 ```
 
 ## Output
