@@ -21,7 +21,7 @@ def plot_adev(results, output_plot):
     plt.xscale('log')
     plt.yscale('log')
     plt.xlabel('Averaging Time (τ) [s]')
-    plt.ylabel('Allan Deviation')
+    plt.ylabel('Allan Deviation ($\sigma$)')
     plt.title('Allan Deviation vs Averaging Time')
     plt.grid(True, which="both", ls="--", alpha=0.5)
     plt.legend()
