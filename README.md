@@ -62,10 +62,6 @@ For each input CSV:
 - `*_adev.csv`: CSV file with tau, Allan deviation, error, and sample count
 - `*_plot.png`: Log-log plot with error bands
 
-## License
-
-MIT License
-
 ## Author
 
-Adapted with ❤️ by [Your Name]
+alejandro.keller@fhnw.ch
