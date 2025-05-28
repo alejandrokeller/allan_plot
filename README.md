@@ -14,6 +14,10 @@ This Python script calculates the Allan deviation for one or more time series st
 - Produces a log-log **plot** with shaded error bands
 - Customizable averaging time mode: `all`, `octave`, or `decade`
 
+## Plot example
+
+![Allan deviation plot of x and y components of a signal](./graph/example.png)
+
 ## Requirements
 
 - Python 3.x
